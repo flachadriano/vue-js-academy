@@ -2,6 +2,7 @@ new Vue({
   el: '#app',
   data: {
     title: 'My guest list',
+    subtitle: 'Invite your <b>friends<b>',
     guest: '',
     guests: [],
     formClass: '',
