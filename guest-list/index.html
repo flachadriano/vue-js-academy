@@ -26,7 +26,7 @@
       <div :style="styles">
         <span v-if="!guests.length">No Names added yet...</span>
         <div v-else v-for="name in guests">
-          <span>{{ name }}</span>
+          <span>{{ name.toLowerCase() }}</span>
         </div>
       </div>
     </div>
