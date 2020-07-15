@@ -18,6 +18,9 @@ new Vue({
         this.guest = '';
         this.capacityPercentage = this.guests.length / (this.capacity / 100);
       }
+    },
+    keyPressed: function() {
+      console.log('Space bar pressed');
     }
   },
   computed: {
@@ -30,4 +33,9 @@ new Vue({
       console.log('Watch triggered');
     }
   },
+  filters: {
+    formatName: function(name) {
+      return name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
+    }
+  }
 });
