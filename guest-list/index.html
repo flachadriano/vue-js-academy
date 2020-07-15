@@ -30,7 +30,7 @@
         </h5>
 
         <span v-if="!guests.length">No Names added yet...</span>
-        <div v-else v-for="name in guests">
+        <div v-else v-for="name in sortNames">
           <span>{{ name.toLowerCase() }}</span>
         </div>
       </div>

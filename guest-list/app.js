@@ -19,5 +19,15 @@ new Vue({
         this.capacityPercentage = this.guests.length / (this.capacity / 100);
       }
     }
-  }
+  },
+  computed: {
+    sortNames: function() {
+      return this.guests.sort();
+    }
+  },
+  watch: {
+    guest: function(data) {
+      console.log('Watch triggered');
+    }
+  },
 });
