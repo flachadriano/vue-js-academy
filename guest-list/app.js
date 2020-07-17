@@ -1,8 +1,6 @@
 new Vue({
   el: '#app',
   data: {
-    title: 'My guest list',
-    subtitle: 'Invite your <b>friends<b>',
     guest: '',
     guests: [],
     capacity: 25,
@@ -37,5 +35,13 @@ new Vue({
     formatName: function(name) {
       return name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase();
     }
+  }
+});
+
+new Vue({
+  el: '#header',
+  data: {
+    title: 'My guest list',
+    subtitle: 'Invite your <b>friends<b>'
   }
 });
