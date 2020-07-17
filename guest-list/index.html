@@ -30,8 +30,8 @@
         </h5>
 
         <span v-if="!guests.length">No Names added yet...</span>
-        <div v-else v-for="name in sortNames">
-          <span>{{ name | formatName }}</span>
+        <div v-else v-for="(name, index) in sortNames" :key="name">
+          <span>{{ name | formatName }} ({{ index + 1 }})</span>
         </div>
       </div>
     </div>
