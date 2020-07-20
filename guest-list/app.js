@@ -7,13 +7,7 @@ new Vue({
     capacityPercentage: 0,
     styles: {
       marginTop: '25px'
-    },
-    navLinks: [
-      {name: 'Home', id: 1},
-      {name: 'Upcoming events', id: 2},
-      {name: 'Guest benefits', id: 3},
-      {name: 'Latest news', id: 4}
-    ]
+    }
   },
   methods: {
     add: function() {
@@ -48,6 +42,12 @@ new Vue({
   el: '#header',
   data: {
     title: 'My guest list',
-    subtitle: 'Invite your <b>friends<b>'
+    subtitle: 'Invite your <b>friends<b>',
+    navLinks: [
+      {name: 'Home', id: 1},
+      {name: 'Upcoming events', id: 2},
+      {name: 'Guest benefits', id: 3},
+      {name: 'Latest news', id: 4}
+    ]
   }
 });
