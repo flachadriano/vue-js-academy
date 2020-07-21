@@ -53,6 +53,9 @@ const header = new Vue({
   methods: {
     changeCapacity() {
       app.capacity = 15;
+    },
+    changeMyListFriends() {
+      this.$refs.myListFriends.innerText = 'My list friends [clicked]';
     }
   }
 });
