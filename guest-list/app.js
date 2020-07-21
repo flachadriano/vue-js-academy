@@ -1,4 +1,4 @@
-new Vue({
+const app = new Vue({
   el: '#app',
   data: {
     guest: '',
@@ -38,7 +38,7 @@ new Vue({
   }
 });
 
-new Vue({
+const header = new Vue({
   el: '#header',
   data: {
     title: 'My guest list',
@@ -49,5 +49,10 @@ new Vue({
       {name: 'Guest benefits', id: 3},
       {name: 'Latest news', id: 4}
     ]
+  },
+  methods: {
+    changeCapacity() {
+      app.capacity = 15;
+    }
   }
 });
