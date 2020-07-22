@@ -65,3 +65,39 @@ const phrase = new Vue({
 });
 
 phrase.$mount('#replaceable');
+
+// Lifecycle
+new Vue({
+  beforeCreate() {
+    // This is executed before anything
+  },
+  created() {
+    // This is executed after data observe and event initialization
+    // You already have here: Watchers, Computed properties, All methods
+    // DOM does not exists yet
+  },
+  beforeMount() {
+    // Here have already read the template and compiled
+    // Execute it right before the applying on DOM
+    // Controls the first render
+  },
+  mounted() {
+    // The template is completed to attach the DOM
+    // applyed all the properties Vue properties and state
+    // Controls the first render
+  },
+  beforeUpdate() {
+    // When any data has been changed
+    // This is fired before apply any data change
+  },
+  updated() {
+    // After the data changed applyed on template
+  },
+  beforeDestroy() {
+    // Component is still functional
+    // Nothing have changed yet to destroy it
+  },
+  destroyed() {
+    // The component is already destroyed
+  },
+})
