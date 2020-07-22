@@ -17,6 +17,7 @@
       <h2 v-text="title"></h2>
       <h5 v-html="subtitle"></h5>
       <h6 @click="changeMyListFriends" ref="myListFriends">My list friends</h6>
+      <h6 id="replaceable"></h6>
       <hr>
       <ul class="nav">
         <div v-for="navLink in navLinks" :key="navLink.id">

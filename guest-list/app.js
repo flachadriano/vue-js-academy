@@ -59,3 +59,9 @@ const header = new Vue({
     }
   }
 });
+
+const phrase = new Vue({
+  template: '<h6>My list now</h6>'
+});
+
+phrase.$mount('#replaceable');
